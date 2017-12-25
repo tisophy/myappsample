@@ -8,3 +8,53 @@ $ git pull         // Pull Latest from Remote Repository
 $ git clone        // Clone Repository into a New Directory
 
 http://git-scm/download/mac
+
+//name
+$ git init
+$ git config --global user.name 'Name'
+$ git config --global user.email 'email'
+
+// to find hidden folder .Git
+$ defaults write com.apple.Finder AppleShowAllFiles true
+$ killall Finder
+
+// Create, Track and Track Files
+$ touch <file>
+$ git status
+$ git add <file>
+$ git rm --cached <file>
+$ git add .
+$ git add *.html // will add any html
+
+//Commit
+$ git commit
+(i delete)-(# delete)-(esc and type :wq) - enter
+
+// Gitignore
+$ touch .gitignore
+$ touch log.text
+   //// in log.text - type error
+   //// go to .gitignore - type log.text
+   //// to ignore the whole folder - /<folder name>
+
+// Branch
+$ git branch login
+$ git commit -m "Another Change"
+$ git checkout login
+$ touch login.html
+$ git add .
+$ git commit -m "Login Form"
+$ git checkout master
+$ git merge login
+(Added login) - (esc and type :wq) - enter
+
+// Remote
+$ git remote add origin https://github.com/tisophy/myappsample.git
+$ git remote
+$ git push -u origin master
+
+
+Username:
+Password:
+
+ 
